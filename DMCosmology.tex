@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[letterpaper,top=1in,bottom=1in,left=1in,right=1in,marginparwidth=1in]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\newcommand{\Contributors}[1]{ {\footnotesize [\textit{#1}]}}
+
+%A few journal ref commands
+\newcommand{\apjl}{Astrophys. J. Lett.}
+\newcommand{\apj}{Astrophys. J.}
+\newcommand{\aap}{Astron. Astrophys.}
+\newcommand{\nat}{Nature (London)}
+\newcommand{\aj}{Astron. J.}
+\newcommand{\prd}{Phys. Rev. D}
+\newcommand{\aas}{Bull. Am. Astron. Soc.}
+\newcommand{\mnras}{Mon. Not. R. Astron. Soc.}
+\newcommand{\jcap}{Journal of Cosmology and Astroparticle Physics}
+
+
+\title{Dark Matter Physics with Cosmological Probes}
+%\date{}
+\author{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\Contributors{Vera}
+Fill in abstract here. Also add a memorable artistic figure to fill in the front page?
+\end{abstract}
+
+\pagebreak
+\section{Introduction}
+\Contributors{Vera}
+
+The most sensitive low-energy searches for DM are looking to directly detect collisions of DM particles from the local galactic halo in underground detectors \cite{}. They have unprecedented sensitivity to WIMPs with masses well above a GeV \cite{}, but the current generation of experiments is largely insensitive to lighter particles, for kinematic reasons. New technologies are necessary to open up sub-GeV models of DM to detailed exploration \cite{}. Moreover, due to the extensive shielding of their targets, direct detection experiments have a ceiling on their sensitivity to large cross sections. The portion of DM parameter space excluded by current null results is shown in Figure \ref{ref:dd}. 
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.6\columnwidth]{figures/planck_dd.png}
+%\caption{Current exclusions: direct detection \cite{} and Planck \cite{}.}
+%\label{fig:dd}
+%\end{figure}
+
+Current null results from such targeted searches warrant broad scans of parameter space that is inaccessible to underground experiments. Cosmological observables provide such a complementary search strategy. In particular, they are sensitive to scattering of sub-GeV particles with baryons at any point in cosmic history. Furthermore, there is no upper boundary on the interaction cross section they can probe. Finally, they are not subject to the uncertainty on local astrophysical properties of DM particles (their phase-space distribution), which affects the inferred limits on the particle properties of DM in case of direct detection data analyses. 
+
+[Yacine: should the title specify \emph{particle}-DM physics?]
+
+\section{Interactions with Baryons}
+\Contributors{Kim, Cora, Yacine}
+
+\subsection{Intro Paragraph}
+\Contributors{Kim}
+
+It is possible to use cosmological observations to search for and constrain DM interactions with baryons.
+Elastic scattering between DM particles and baryons in the early Universe results in the exchange of heat and momentum between the DM and the baryon fluids.
+Heat transfer drives the temperature of the DM towards that of the baryons, and the temperatures become coupled if the rate of heat transfer is sufficiently high.
+Momentum transfer impacts the velocity perturbations of the DM and baryon fluids, inducing a drag force that causes a suppression of structure at progressively smaller scales.
+The dominant effect of scattering on CMB power spectra is thus the suppression of power at high multipole moments.
+Similarly, the matter power spectrum is suppressed at large wave numbers in a manner akin to that seen for warm dark matter.
+The following subsections discuss searches and constraints of DM-baryon interactions through observations of the CMB, measurements of the Lyman-alpha forest, and 21-cm tomography.
+
+\subsection{CMB Power Spectra}
+The effect of DM-baryon scattering on the CMB power spectra relies on the form of the interaction between the two particles.
+Rather than considering the large number of specific models for DM-baryon interactions, applying a low-energy effective theory formalism~\cite{Fan:2010gt,Fitzpatrick:2012ix,Anand:2013yka,Dent:2015zpa} to cosmology provides a more generic approach in searching for interactions~\cite{Boddy:2018kfv}.
+In fact, the rate of momentum transfer between the dark matter and baryon fluids is only sensitive to the velocity dependence and overall magnitude of the momentum-transfer cross section, making cosmological observation very broad and generic probes of dark matter physics.
+The momentum-transfer cross section may thus be written as a constant $\sigma_0$ times some power $n$ of the relative particle velocity $v$: $\sigma_\textrm{MT} = \sigma_0 v^n$~\cite{Dvorkin:2013cea}.
+
+If the rate of momentum transfer is very large prior to recombination, the dark matter tightly couples to the baryons and undergoes acoustic oscillations with the baryons, which produces damped oscillatory features in the matter power spectrum.
+It is also possible that the rate of momentum transfer is very large at late times, post recombination.
+Such a scenario has implications for lower redshift cosmological observables from the Dark Ages and Cosmic Dawn.
+The best current CMB limits on DM-baryon scattering are derived from Planck temperature, polarization, and lensing anisotropy measurements~\cite{Boddy:2018kfv,Gluscevic:2017ywp,Boddy:2018wzy,Xu:2018efh,Slatyer:2018aqg}.
+Since the effect of scattering is more prominent at smaller scales, CMB experiments such as ACT or SPT are able to somewhat improve upon Planck-only constraints~\cite{Slatyer:2018aqg}, though next generation experiments are expected to have substantial improvements in sensitivity to DM-baryon interactions~\cite{Li:2018zdm}.
+
+\subsection{CMB and Lyman-alpha Constraints}
+\Contributors{Cora}
+
+In the standard scenario of collisionless DM, perturbations to
+the DM density grow in amplitude, while the pressure in the baryon-photon fluid prevents it from falling into
+the DM-dominated potential wells. This dynamics defines the overall shape of the CMB and the matter power spectra.
+If there is some coupling between DM and baryons, then the drag force between the baryon-photon fluid and the DM affects the baryon-photon oscillations and suppresses the
+growth of perturbations of the matter density. Therefore, the net effect comes in as a suppression in power in the CMB and matter fluctuations (the higher the momentum transfer between baryons and dark matter, the later the DM decouples from the baryons, the larger the scales that are affected).
+
+Ref. \cite{Dvorkin:2013cea} modified the Boltzmann equations for dark matter and baryons to encapsulate the information of momentum transfer between baryons and dark matter.
+They considered the case of dark matter particles more massive than a proton. In this scenario, the momentum transfer rate is proportional to $\sigma/m_\chi$, where $\sigma$ is the cross section for baryon-dark matter scattering and $m_\chi$ is the mass of the dark matter particle.
+They ran a Markov Chain Monte Carlo likelihood analysis for the six standard $\Lambda$CDM cosmological parameters, and $\sigma/m_\chi$ as an additional parameter, using measurements of the CMB temperature power spectrum from the Planck satellite and Lyman-alpha forest flux power spectrum measurements from the {\it Sloan Digital Sky Survey} (SDSS), which served as a tracer of matter fluctuations. 
+Lyman-alpha forest data dominates the constraints for $n>-3$ (for cross sections that scale as $\sigma\propto v^n$, where $v$ is the relative velocity between the baryons and the dark matter), where the improvement over CMB data alone can be several orders of magnitude.
+Their results imply, model-independently, that a baryon in the halo of a galaxy like our own Milky Way, does not scatter from dark matter particles during the age of the galaxy. 
+
+In Ref. \cite{Xu:2018efh}, the authors extended their previous analysis in two important ways, improving over previous constraints:
+by considering sub-GeV DM masses, and by adding CMB polarization data to their previous analysis. Additionally, they proposed a scaling for the scattering cross section as a function of mass that agrees with observations for the range considered. 
+
+\subsection{CMB spectral distortions}
+\Contributors{Yacine}
+The CMB is a sensitive calorimeter: energy injected into -- or extracted from -- the photon-baryon plasma at $z \lesssim 2 \times 10^6$ does not get fully thermalized, and may distort the CMB spectrum away from a perfect blackbody \cite{Hu_96}. In particular, energy injection at $5 \times 10^4 \lesssim z \lesssim 2 \times 10^6$ leads to a chemical potential $\mu$, of order the fractional energy injected \cite{Chluba_13}. If a DM particle scatters with either photons, electrons or nuclei, it exchanges heat with the thermalized plasma. If this particle is non-relativistic, cosmological expansion makes it cool faster than the photon-baryon plasma, and as a consequence, the DM constitutes a heat sink for the latter. The rate of heat transfer per unit volume is proportional to the \emph{number density} of interacting DM particles, hence, at fixed mass density, inversely proportional to the mass of the DM particle. This effect is therefore most sensitive to light DM particles, that thermally decouple deep in the radiation era, and is complementary to direct-detection searches. The effect was first pointed out and explored analytically in \cite{AliHaimoud_15}. It was shown that existing spectral-distortion limits from COBE FIRAS \cite{Fixsen_96} allow to constrain DM-baryon and DM-photon interactions up to DM mass $m_\chi \lesssim 0.1$ MeV. Future spectral-distortion measurements sensitive to $\mu \sim 10^{-8}$ (such as the proposed experiment PIXIE \cite{Kogut_11}) will be sensitive to interacting DM particles as massive as $\sim 1$ GeV. Measuring spectral distortions in conjunction with CMB anisotropies would make a powerful test of DM interactions at high redshifts. [Plots? Explicit value for cross sections? I'll have a much improved version of \cite{AliHaimoud_15} soon...]
+
+\subsection{21-cm tomography}
+
+\Contributors{Yacine} Between cosmological recombination at $z \sim 10^3$ and reionization at $z \sim 10$, the mostly neutral gas can in principle be observed through the hyperfine 21-cm transition of ground-state hydrogen. The contrast between the brightness temperature in the redshifted 21-cm line and the background CMB is proportional to the difference between the temperature of the gas and that of the CMB. Just like CMB spectral distortions, the 21-cm signal is therefore a potentially powerful calorimeter, and can be used to probe the thermal history of the gas at redshifts as high as $\sim 200$ \cite{Loeb_04, Breysse_18}, beyond which it is in close thermal contact with CMB photons. In particular, the sky-averaged and fluctuations of the 21-cm brightness can be used to test DM-baryon interactions \cite{Tashiro_14}. It is an especially interesting probe of Coulomb-like cross sections $\sigma \propto v^{-4}$, which would arise, for instance, if the DM has a small electric charge. Spatial fluctuations of the 21-cm signal are modulated by the supersonic relative velocities between baryons and DM \cite{Tseliakhovich_10}, even in the absence of DM-baryon interactions \cite{AliHaimoud_14}. This modulation is enhanced if DM scatters with baryons with a strong velocity dependence, leading to a unique signature of these interactions on the 21-cm power spectrum \cite{Munoz_15, Barkana_18, Fialkov_18, Munoz_18}. [To be completed: do we talk about EDGES? Do we mention planned/futre 21-cm missions?]
+
+\section{Interactions with Dark Radiation}
+\Contributors{Francis-Yan}
+The exquisite sensitivity of the CMB to the depth and size of the DM gravitational potentials near the surface of last scattering makes it a particular good probe of any new physics affecting the clustering of DM on large scales at early times. This sensitivity to DM density fluctuation properties is extended to lower redshifts via the weak gravitational lensing that CMB photons experience as they propagate to us. Similar to how tight coupling with photons prohibits the growth of baryon fluctuations until the epoch of hydrogen recombination, DM interacting with light (or massless) dark radiation (DR) at early times experiences a suppressed growth of structure due to the radiation pressure that opposes gravitational infall. Models where such interactions arise are diverse in their particle content (see e.g. Refs.~\cite{Aarssen:2012fx,Cyr-Racine:2013fsa,Buen-Abad:2015ova}), and can generically occur in several theories recently proposed to explain the large hierarchy between the Planck and electroweak scales \cite{Arkani-Hamed:2016rle, Chacko:2018vss}. They also have been invoked to explain the apparent low amplitude of matter fluctuations on large scales measured by certain weak-lensing surveys \cite{Lesgourgues:2015wza,Chacko:2016kgg,Buen-Abad:2017gxg,Krall:2017xcw}, and naturally arise in the context of the self-interacting DM paradigm (see e.g. Refs.~\cite{Tulin:2012wi,Tulin:2013teo,Kaplinghat:2015aga}), which has been proposed to address possible anomalies on subgalactic scales \cite{Bullock:2017xww}. 
+
+ DM-DR interactions impact the CMB and large-scale structure in a variety of distinctive ways \cite{Boehm:2001hm,Cyr-Racine:2013fsa,Cyr-Racine:2015ihg}. First and foremost, the suppressed growth of DM density fluctuations at early times leads to a reduced amplitude of the matter power spectrum on scales entering the causal horizon before DM kinematically decouples from the DR. Such suppression, which generally has a different shape than that cause by massive neutrinos \cite{Abazajian:2016yjj}, can be probed by precise CMB lensing, galaxy clustering, weak gravitational lensing, Lyman-$\alpha$ forest, and 21-cm measurements. A complementary feature of interacting DM-DR models that helps distinguish them from other physics suppressing the matter power spectrum is the presence of extra radiation. Importantly, the DR forms a tightly-coupled fluid at early times in these models, which leads to signatures on CMB fluctuations that are distinct from those of standard free-streaming neutrinos (see Refs.~\cite{Bashinsky:2003tk,Follin:2015hya,Baumann:2015rya}).
+ 
+The extreme precision of proposed future CMB measurements (such as CMB-S4) presents a unique opportunity to probe yet unknown DM-DR interactions, especially if DM resides in a secluded sector with very weak or no interaction with the Standard Model of particle physics. We emphasize that constraints on such pure ``dark sector'' interactions are only possible through cosmological and astrophysical probes since such physics leaves no signal in laboratory experiments. In particular, with the current absence of clear signatures at the Large Hadron Collider, the CMB likely presents the best prospect at probing new ideas put forward to explain the hierarchy problem mentioned above. Indeed, high-resolution future measurements of the CMB polarization spectrum could detect or rule out DM-DR interactions taking place at redshift $z\lesssim10^6$, even in the case where only a small fraction ($<5\%$) of the overall dark matter density participates in these interactions. Lyman-$\alpha$ forest and 21-cm observations could extend the sensitivity to DM-DR interactions taking place at even earlier times. Clearly, a significant amount of unique information about yet unknown DM interaction remains to be extracted from cosmological probes, an important opportunity that should be exploited in the next decade.  
+
+\section{Interactions with Neutrinos}
+\Contributors{Julien} 
+
+Non-standard interactions between Dark Matter and neutrinos are essentially impossible to constrain in accelerators. 
+Instead their potential impact on cosmology could be very significant \cite{Boehm:2001hm,Mangano:2006mp,Serra:2009uu,Wilkinson:2014ksa}, especially since the number density of neutrinos in the universe is very large. Unlike DM-photon interactions, they are not constrained by CMB spectral distortions. The bounds are dominated by cosmological perturbation observables: CMB and large scale structure. Since photons are coupled gravitationally to both Dark Matter and neutrinos, a different evolution of the perturbations of these two species can propagate to photons, and strongly impact the CMB temperature and polarization spectra.
+
+The most generic models for a non-standard interaction between neutrinos and the dark sector tend to predict a DM-neutrino cross-section scaling like the squared temperature (as for neutrino-electron scattering), but there are some counter examples. For instance, if the interaction is mediated by a particle nearly degenerate in mass with the DM particle, or much lighter than it, the cross-section could be constant, like for Thomson scattering. These are the two cases studied in the literature, but one could adopt a phenomenological approach with an arbitrary power-law $\sigma \propto v^n$.
+
+The consequences of such interactions are somewhat similar to those of DM-DR interactions, although in this case, no extra relativistic degrees of freedom are required compared to the minimal LambdaCDM scenario. If the decoupling between neutrinos and Dark Matter takes place after the standard neutrino decoupling temperature, $T \sim 1$MeV, the tightly coupled DM-neutrino fluid experiences acoustic oscillations and diffusion damping. Gravitational interactions between photons and neutrinos always have important effects on the CMB spectrum, controlling in  particular the amplitude and position of the acoustic peaks. In presence of efficient DM-neutrino scattering, the photons interact instead with a DM-neutrino effective fluid, which is smoother than ordinary free-streaming neutrinos, and has a smaller sound speed. This tends to lower the CMB acoustic peaks and to shift them to higher multipoles \cite{Wilkinson:2014ksa}. This is a distinct effect that can be separated e.g. from that of extra relativistic relics. Even more effects would appear if the DM-neutrino decoupling was not complete at the time of radiation-matter equality, but this case is already excluded by current data. 
+
+Due to collisional damping, these interactions also suppress the matter power spectrum on small scales \cite{Boehm:2001hm,Mangano:2006mp}, in a very similar fashion as DM-baryon or DM-DR interactions. Thanks to this effect, current bounds on the DM-neutrino scattering cross-section are by far dominated by Lyman-alpha observations \cite{Wilkinson:2014ksa} rather than CMB bounds \cite{Escudero:2015yka,DiValentino:2017oaw,Diacoumis:2018ezi}. It is however important to have better constraints on the CMB polarization spectrum. First, this will allow to improve the bounds in a robust way, independent of the modelling of non-linear effects. Second, in the case of a positive detection of a suppression in the matter power spectrum reconstructed with Lyman-alpha data, high-precision CMB data would offer an opportunity to discriminate between various candidate models.
+
+\section{Annihilations and Decay}
+\Contributors{Tracy}
+
+If DM annihilates or decays in such a way as to produce electromagnetically interacting particles, these particles and their decay products will generically heat and ionize the baryonic gas during the cosmic dark ages. Increasing the ionization fraction after recombination broadens the last scattering surface, perturbing the CMB anisotropy power spectrum \cite{Adams:1998nr,Chen:2003gz, Padmanabhan:2005es} and bispectrum \cite{Dvorkin:2013cga}. Heating of the gas becomes important after the gas temperature decouples from that of the CMB; 21cm probes of the reionization epoch and the end of the cosmic dark ages could tightly constrain such energy injections \cite{Furlanetto:2006wp,Valdes:2007cu,Evoli:2014pva,Lopez-Honorez:2016sur,Poulin:2016anj}. Furthermore, early-time heating of the photon-baryon plasma by annihilations or decays, and production of secondary low-energy photons, would  distort the blackbody spectrum of the CMB \cite{Chluba:2013wsa}.
+
+The effects of DM annihilation \cite{Slatyer:2015jla} or decay \cite{Slatyer:2016qyl} on the CMB anisotropies can be well-described by a model-independent perturbation to the power spectrum with a characteristic shape, combined with a model-dependent normalization factor that is constrained by the data. This normalization factor is defined as $f_\text{eff} \langle \sigma v \rangle/m_\chi$ for DM of mass $m_\chi$ annihilating with cross section $\langle \sigma v \rangle$, and as $g_\text{eff}/\tau$ for DM decaying with a lifetime $\tau$, where $f_\text{eff}$ ($g_\text{eff}$) is an efficiency factor depending on the annihilation (decay) products and their energies. These efficiency factors can be estimated for any DM model given the spectra of photons, electrons and positrons produced by annihilations/decays \cite{Slatyer:2015kla}, and vary in the range $f_\text{eff} \sim 0.1-1, g_\text{eff} \sim 0.01-1$ for non-neutrino Standard Model final states.
+
+The most up-to-date CMB limit on annihilating DM is $f_\text{eff} \langle \sigma v \rangle/m_\chi \le 3.2\times 10^{-28} \text{cm}^3\text{/s/GeV}$ \cite{Aghanim:2018eyx}; this limit excludes DM annihilating with an unsuppressed thermal relic cross section ($\langle \sigma v \rangle \sim 2-3\times 10^{-26} \text{cm}^3/s$), into visible particles, at masses below $\sim 10$ GeV. For decay, the analogous limit (based on Planck 2015 data) is $\tau/g_\text{eff} \ge 2.6\times 10^{25}$ s \cite{Slatyer:2016qyl}.
+
+Decay of a metastable species with a lifetime shorter than the age of the universe can also be stringently tested by the CMB \cite{Poulin:2016anj}, if electromagnetically interacting particles are produced. Furthermore, even decay of such a species into invisible channels, such as neutrinos or new dark degrees of freedom, can be constrained via its gravitational effects on the CMB \cite{Poulin:2016nat}.
+
+21cm observations of the late cosmic dark ages can provide stringent limits on the gas temperature, and hence on exotic sources of heating. For example, decaying DM models that are close to the limit of detectability in other searches could modify the global 21cm brightness temperature by tens of mK at redshifts 10-30, even converting an expected absorption signal to an emission signal \cite{Poulin:2016anj}. Confirmed detection of a 21cm signal could allow strong and robust constraints to be placed on annihilation and decay, even in the presence of other effects modifying the signal \cite{Liu:2018uzy}. Heating and ionization of early halos from DM annihilation or decay could also modify the early history of star formation \cite{Schon:2014xoa}.
+
+Given other cosmological constraints on DM annihilation and decay, the expected size of the distortion to the CMB blackbody spectrum is small, at the level of $\Delta E/E \sim 10^{-9}-10^{-10}$ \cite{Chluba:2016bvg}. This signal is well beyond the reach of current constraints, but could potentially be tested by future experiments.
+
+[in progress]
+
+\section{Summary}
+\Contributors{Vera}
+
+\bibliographystyle{ieeetr}
+\bibliography{DMcosmology}
+
+\end{document}
