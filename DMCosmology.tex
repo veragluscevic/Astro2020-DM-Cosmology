@@ -1,23 +1,22 @@
 \documentclass[12pt]{article}
-
 %% Language and font encodings
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{wrapfig}
 \usepackage{cite}
-
-%% Sets page size and margins
-\usepackage[letterpaper,top=1in,bottom=1in,left=1in,right=1in,marginparwidth=1in]{geometry}
-
-%% Useful packages
+\usepackage{ae,aecompl}
+\usepackage{enumitem}
+\usepackage{bm}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{multicol}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+%% Sets page size and margins
+\usepackage[letterpaper,top=1in,bottom=1in,left=1in,right=1in,marginparwidth=1in]{geometry}
 
-\newcommand{\Contributors}[1]{ {\footnotesize [\textit{#1}]}}
 
 %A few journal ref commands
 \newcommand{\apjl}{Astrophys. J. Lett.}
@@ -31,11 +30,12 @@
 \newcommand{\jcap}{Journal of Cosmology and Astroparticle Physics}
 \newcommand{\vg}[1] {\textcolor{red}{#1}}
 \newcommand{\yah}[1] {\textcolor{blue}{#1}}
+\newcommand{\Contributors}[1]{ {\footnotesize [\textit{#1}]}}
 
-
-\title{\textbf{Astro2020 Science White Paper}\\
+\vspace{-5cm}
+\title{{Astro2020 Science White Paper}\\
 \vspace{0.5cm}
-Cosmological Probes of Dark Matter Interactions}
+\bf{Cosmological Probes of Dark Matter Interactions: The Next Decade}}
 \date{}
 \author{}
 
@@ -45,43 +45,48 @@ Cosmological Probes of Dark Matter Interactions}
 \begin{center}
 \textbf{Thematic area:} Cosmology and Fundamental Physics.     
 \end{center}
+
+%\begin{center}
+\noindent\textbf{Principal Author:} \\
+Vera Gluscevic\\
+Institution: University of Florida\\
+Email: \texttt{v.gluscevic@ufl.edu}\\
+Phone: 1-352-392-8754
+%\end{center}
+
 \vspace{0.5cm}
+%\begin{center}
+\noindent\textbf{Co-Authors:}
+%\end{center}
 
-{\begin{tabular}{ll}
-\textbf{Principal Author:} \\
-Vera Gluscevic & \\
-University of Florida \& Princeton University & \\
-email: verag@princeton.edu\\
-phone: 609-258-0720 & 
-\end{tabular}
+\noindent 
+{Yacine Ali-Ha\"imoud$^{1}$, Kimberly K.~Boddy$^{2}$, C\'eline B\oe{}hm$^{3,4}$, Jens Chluba$^{5}$, Francis-Yan Cyr-Racine$^{6,7}$, Cora Dvorkin$^{7}$, Vera Gluscevic$^{8,9}$, Daniel Grin$^{10}$, Julien Lesgourgues$^{11}$, Julian B.~Mu\~noz$^{7}$, Ethan O.~Nadler$^{12}$, Vivian Poulin$^{13}$, Sarah Shandera$^{14}$, Katelin Schutz$^{15}$, Tracy R.~Slatyer$^{16}$}
 
-\vspace{0.5cm}
-%\vfill
-{\begin{tabular}{l}
-\textbf{Co-Authors:}\\
-Yacine Ali-Haimoud (\textit{NYU})\\
-Kimberly K. Boddy (\textit{JHU})\\
-Celine Boehm (\textit{})\\
-Jens Chluba (\textit{JBCA Manchester})\\
-Francis-Yan Cyr-Racine (\textit{Harvard, University of New Mexico})\\
-Cora Dvorkin (\textit{Department of Physics, Harvard University, 17 Oxford St., Cambridge, MA 02138})\\
-Daniel Grin (\textit{Haverford})\\
-Julien Lesgourgues (\textit{})\\
-Julian B.~Mu\~noz (\textit{Department of Physics, Harvard University, 17 Oxford St., Cambridge, MA 02138})\\
-Ethan O.~Nadler (\textit{})\\
-Vivian Poulin (\textit{})\\
-Sarah Shandera (\textit{})\\
-Tracy R. Slatyer (\textit{MIT})\\
-\end{tabular}}
-}
-\vspace{7mm}
-%{\begin{tabular}{l}
-%\textbf{Endorsers:}\\
-%%& \phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
-%\end{tabular}}
+\def\affil#1{\noindent #1 \\}
 
+\begin{multicols}{2}
+\scriptsize
+\affil{$^{1}$ Department of Physics, New York University}
+\affil{$^{2}$ Department of Physics and Astronomy, Johns Hopkins University}
+\affil{$^{3}$ School of Physics, The University of Sydney, Australia}
+\affil{$^{4}$ LAPTH, France; Perimeter institute, Canada}
+\affil{$^{5}$ Jodrell Bank Center for Astrophysics, UK}
+\affil{$^{6}$ Department of Physics and Astronomy, University of New Mexico}
+\affil{$^{7}$ Department of Physics, Harvard University}
+\affil{$^{8}$ Department of Physics, University of Florida}
+\affil{$^{9}$ Department of Physics, Princeton University}
+\affil{$^{10}$ Department of Physics and Astronomy, Haverford College}
+\affil{$^{11}$ RWTH Aachen University, Germany}
+\affil{$^{12}$ KIPAC and Department of Physics, Stanford University}
+\affil{$^{13}$ France}
+\affil{$^{14}$ Department of Physics, Penn State University}
+\affil{$^{15}$ Center for Theoretical Physics, Massachusetts Institute of Technology}
+\affil{$^{16}$ Department of Physics, University of California Berkeley}
 
+\normalsize
+\end{multicols}
 
+\noindent\textbf{Endorsers:\texttt{}}
 \begin{abstract}
 Cosmological observations offer unique and robust avenues for probing the fundamental nature of dark matter particles---they broadly test a range of compelling theoretical scenarios, often surpassing or complementing the reach of terrestrial and other experiments.
 We discuss observational and theoretical advancements that will play a pivotal role in realizing a strong program of cosmological searches for the identity of dark matter in the coming decade. Specifically, we focus on measurements of the cosmic-microwave-background anisotropy and spectral distortions, and tracers of structure (such as the Lyman-$\alpha$ forest, galaxies, and cosmological 21-cm signal).
@@ -92,7 +97,7 @@ We discuss observational and theoretical advancements that will play a pivotal r
  
 Observations of the Universe, from our Galactic neighborhood, to the cosmological horizon, consistently testify that $\sim$85$\%$ of matter behaves as a cold non-collisional fluid that sources gravitational potentials and underpins structure on virtually all observable scales.
 \textbf{Over the past decades, it was confidently established that the main constituents of the dark matter (DM) component \textit{cannot} be any known baryonic particles.}
-The existence of DM thus implies new physics whose investigation centrally drives research at the intersection of modern astrophysics, cosmology and particle physics. 
+The existence of DM thus implies new physics whose investigation centrally drives research at the intersection of modern astrophysics, cosmology, and particle physics. 
 
 Following its discovery, a versatile range of laboratory experiments was built worldwide to directly detect and/or produce some of the best-motivated particle candidates that could account for cosmological DM: WIMPs, WIMP-like particles, axions, etc; so far, this effort is without success.
 Astrophysical and cosmological observations provide the only evidence for the existence of DM and source a large portion of what is known about its properties: its stability on cosmological time scales, its apparent non-collisional nature, and its central role in the formation and growth of structure.
@@ -115,9 +120,9 @@ We focus on cosmological searches, whose key goal is to detect the effects of DM
 \textbf{The next decade of observations will see a tremendous leap in sensitivity to each of them}, in some cases, by many orders of magnitude in DM mass and interaction cross sections.
 Multiple observables---cosmic microwave background (CMB) anisotropy and spectral distortions, tracers of large-scale structure, and objects in our Galactic neighborhood---can all probe the same underlying microphysics throughout cosmic history, on a broad range of physical scales (Fig.~\ref{fig:scales}).
 \textbf{Establishing DM signal discovery and robustly testing its fundamental nature will rely on confirmation and consistency checks between different data sets.}
-This will necessitate progress in understanding the synergies between observables, and the development of frameworks that enable their joint analyses to probe the same underlying microphysics.
-In addition, the DM search program with next-generation cosmological data will rely on accurate theoretical treatments of the formation and evolution of small-scale structure in non-standard cosmologies, and modeling of baryonic and other non-linear effects that present potential systematic uncertainties in DM parameter inference \cite{2019arXiv190201055D,2018PhRvD..98h3540M,AliHaimoud_19}.
-We review the strengths, caveats, and future promises of a range of cosmological probes in search for the identity of DM, and conclude with a list of advancements that will be central to this program in the coming decade.
+This will necessitate progress in understanding synergies between observables, and development of frameworks that enable their joint analyses to probe the same underlying DM microphysics.
+In addition, the DM search program with next-generation cosmological data will rely on accurate theoretical treatment of the formation and evolution of structure in non-standard cosmologies, and modeling of baryonic and other non-linear effects that present systematic uncertainties for DM parameter inference \cite{2019arXiv190201055D,2018PhRvD..98h3540M,AliHaimoud_19}.
+We summarize the future promise of cosmological measurements in search for the identity of DM, and conclude with a list of advancements that will be pivotal to its success in the coming decade.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-0.4cm}
 \section{Theory and Observations}
@@ -126,9 +131,9 @@ We review the strengths, caveats, and future promises of a range of cosmological
 \subsection{Scattering with Baryons}
 
 In the standard model of cosmology DM is non-collisional, but elastic scattering between DM and visible particles is commonplace in some of the best-motivated DM models, including the WIMPs and WIMP-like particles.
-For this reason, the most sensitive terrestrial DM searches with direct detection experiments are looking for scattering of Galactic-halo DM on nuclei in underground targets.
-However, the same scattering processes can occur in a cosmological setting and lead to an exchange of heat and momentum between DM and baryons, absent in the standard (non-collisional) cosmology \cite{Boddy:2018kfv,Gluscevic:2017ywp,Boddy:2018wzy,Xu:2018efh,Slatyer:2018aqg,Dvorkin:2013cea,2001PhLB..518....8B,2005A&A...438..419B,2004NuPhB.683..219B,Sigurdson:2004zp}. 
-This can affect both the thermal history of the Universe and the evolution of cosmological perturbations, captured by various observables.
+For this reason, terrestrial DM searches with direct detection experiments are looking for scattering of Galactic-halo DM on nuclei in underground targets.
+However, the same scattering processes can occur in a cosmological setting and lead to an exchange of heat and momentum between DM and baryons (i.~e.~the visible particles), absent in the standard (non-collisional) cosmology \cite{Boddy:2018kfv,Gluscevic:2017ywp,Boddy:2018wzy,Xu:2018efh,Slatyer:2018aqg,Dvorkin:2013cea,2001PhLB..518....8B,2005A&A...438..419B,2004NuPhB.683..219B,Sigurdson:2004zp}. 
+This can affect both the thermal history and the evolution of cosmological perturbations, captured by various observables.
 
 %%%%%%%%%%%%%%%%%%%%%
 \textbf{CMB spectral distortions.} 
@@ -143,23 +148,23 @@ Spectral distortions in conjunction with power suppression in CMB anisotropy in 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{CMB anisotropy.} 
-Scattering prior to recombination ($z\sim 1100$) induces a drag force that causes momentum transfer between the DM and baryon fluids. 
+DM-baryon scattering prior to recombination ($z\sim 1100$) induces a drag force and momentum transfer between the DM and baryon fluids. 
 This results in power suppression in density fluctuations, which is more prominent for progressively smaller scales and stronger interactions.
 As perturbations grow, the lack of small-scale structure translates into an underabundance of luminous DM tracers throughout cosmic history (Fig.~\ref{fig:scales}).
 %%%
 
-\textit{Planck} measurements of the CMB temperature anisotropy currently provide the most pristine cosmological bound on the DM-baryon scattering cross section~\cite{Boddy:2018kfv,Gluscevic:2017ywp,Boddy:2018wzy,Xu:2018efh,Slatyer:2018aqg,Dvorkin:2013cea}; they already sensitively probe DM interactions as far back in time as when the Universe was a thousand years old.
-However, the first high-signal-to-noise measurements of the CMB polarization and lensing on small ($\lesssim$arcminute) angular scales---to be delivered by the next-generation CMB experiments---can enable a leap in sensitivity to DM scattering by up to \textit{several orders of magnitude}~\cite{2018PhRvD..98l3524L,2018arXiv180807445T,Abazajian:2016yjj,2019arXiv190210541H}.
-Interestingly, the effects of DM-baryon interactions are insensitive to uncertainties on cosmological parameters and are distinct from other new physics targeted by future CMB experiments (e.g.~the neutrino mass and ultra-light particles). 
-CMB is therefore a robust probe of DM microphysics, and can be made even more so by refining the theoretical treatment of DM interactions, beyond the standard ideal-thermal-fluid approximation \cite{AliHaimoud_19}.
-However, in spite of its robustness, the CMB has a limited grasp of small scales, where the effects of interactions are more prominent; small scales are accessible to other observables, but are more prone to systematic modeling and measurement uncertainties.
+\textit{Planck} measurements of the CMB temperature anisotropy currently provide the most pristine cosmological bound on the DM-proton scattering cross section~\cite{Boddy:2018kfv,Gluscevic:2017ywp,Boddy:2018wzy,Xu:2018efh,Slatyer:2018aqg,Dvorkin:2013cea}.
+They already sensitively probe interactions of DM particles with masses outside the detection limits of most existing direct detection experiments ($\gtrsim 1$ keV) \cite{Gluscevic:2017ywp}, taking place as far back in time as when the Universe was a thousand years old.
+However, the first high-signal-to-noise measurements of the CMB polarization and lensing on small ($\sim$arcminute) angular scales---to be delivered by the next-generation CMB experiments---can enable a leap in sensitivity to DM scattering cross sections by up to \textit{several orders of magnitude}, as compared to \textit{Planck}~\cite{2018PhRvD..98l3524L,2019JCAP...02..056A,Abazajian:2016yjj,2019arXiv190210541H}.
+Interestingly, measurement of DM-baryon scattering with CMB anisotropy is insensitive to uncertainties on cosmological parameters, and the relevant signals are distinct from those of other new physics targeted by future CMB experiments (e.g.~the neutrino mass). 
+However, in spite of the robustness of these measurements, the CMB has a limited grasp of small scales, where the effects of the interactions are more prominent; small scales are accessible to other observables, but are more prone to systematic modeling and measurement uncertainties.
 
 \textbf{Lyman-$\alpha$ forest.} 
-For example, Lyman-$\alpha$ forest measurements from SDSS trace the matter power spectrum on comoving scale of about 1 Mpc; their analysis set the most stringent to-date cosmological bound on DM-baryon interactions, surpassing the CMB  \cite{Xu:2018efh,Dvorkin:2013cga}.
-This bound implies that a baryon within a Milky Way-like galaxy does \textit{not} scatter with DM over the age of the galaxy.
-There is room for improvement with spectroscopic surveys that could reconstruct even smaller scales with similar measurements.
-However, inference of fundamental physics from these data relies on accurate modeling of the Lyman-$\alpha$ forest and non-linear evolution of small scales.
-Consistency checks and joint analyses with high-precision CMB measurements and other probes can alleviate such uncertainties in the future.
+For example, SDSS Lyman-$\alpha$ forest measurements trace the matter power spectrum on comoving scale of about 1 Mpc; their analysis set the most stringent to-date cosmological bound on DM-baryon interactions, surpassing the CMB  \cite{Xu:2018efh,Dvorkin:2013cga}.
+This bound implies that a baryon within a Milky-Way-like galaxy does \textit{not} scatter with DM over the age of the galaxy.
+Future spectroscopic surveys could improve upon these limits by reconstructing even smaller scales with similar measurements.
+However, inference of fundamental physics from these data relies on accurate modeling of the Lyman-$\alpha$ forest and non-linear evolution of small scales \cite{2017PhRvD..96b3522I}.
+Consistency checks and future joint analyses with high-precision CMB measurements and other probes could alleviate such uncertainties.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{21-cm cosmology.} 
@@ -169,17 +174,17 @@ If DM-baryon scattering occurs \textit{after} recombination is complete, it can 
 The sky-averaged signal and its fluctuations are both sensitive to this effect \cite{Munoz_15, Barkana_18, Fialkov_18, Munoz_18,2018arXiv180210094M}.
 Such a late-time scattering scenario arises, for example, in a simple and well-motivated model whereby DM particles carry a small electric charge and exhibit Coulomb-like interactions (``millicharged'' DM \cite{2017arXiv170704591B,2019arXiv190208623D}).
 This scenario is challenging to test in direct detection experiments \cite{2011PhRvD..83f3509M}; cosmological probes like the 21-cm signal may thus be the optimal detection channel.
-However, 21-cm cosmology is both rapidly-advancing and exceptionally challenging, since it necessitates subtraction of an overwhelming galactic foreground, in order to study cosmological signals. 
+However, 21-cm cosmology is both rapidly-advancing and exceptionally challenging, since it necessitates removal of an overwhelming Galactic foreground signal. 
 As was demonstrated with the recent analyses of the EDGES result \cite{Bowman_18}, cross-checks with other probes will likely be essential for interpretation of future anomalies in the 21-cm signal as new physics \cite{Barkana:2018lgd,Kovetz:2018zan,Berlin:2018sjs}. 
 
 %%%%%%%%%%%%%%%%
 \textbf{Galaxies.}
-Galaxies trace structure on even smaller scales (and in the local Universe), and thus hold a bold promise as a probe of DM physics \cite{2019arXiv190201055D}.
+Galaxies trace structure on even smaller scales, and thus hold a bold promise as a probe of DM physics \cite{2019arXiv190201055D}.
 Given the physical scales involved, studies of the abundances of dwarf and satellite galaxies, in particular, could unlock orders of magnitude improvement in sensitivity to DM interactions, compared to the high-redshift and large-scale probes discussed earlier.
-However, robust inference of fundamental physics from studies of galaxies will crucially depend on improvements in modeling and numerically simulating their formation, their non-linear evolution, and baryonic effects in cosmologies with non-standard DM---a challenge that will need much attention in the coming decade.\footnote{Observables such as galaxy clustering and weak lensing are a prime focus of other science white papers.}
+However, robust inference of fundamental physics from studies of galaxies will crucially depend on improvements in modeling and numerical simulation of their formation and evolution within cosmologies with interacting DM, and understanding of baryonic effects---a challenge that will need much attention in the coming decade \cite{2019arXiv190201055D}.\footnote{Observables such as galaxy clustering and weak lensing are also relevant for this discussion and could potentially test the same physics; however, they are a prime focus of other science white papers.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\vspace{-0.3cm}
+\vspace{-0.3cm}
 \subsection{Scattering with Neutrinos}
 
 Neutrinos reside in one of the least well understood parts of the Standard Model of particle physics; indeed, non-vanishing neutrino masses require new physics to explain. 
@@ -199,7 +204,7 @@ As for DM-baryon scattering, future CMB, Lyman-$\alpha$, and galaxy surveys will
 If DM interacts with visible particles, it may also annihilate or decay, further altering the thermal history of the Universe. 
 If annihilation or decay products include electromagnetically interacting particles, these particles can generically heat and/or ionize the baryonic gas.
 Cosmological searches have distinct advantages over classic indirect searches for DM annihilation and decay, as they do not suffer from astrophysical backgrounds and large uncertainties in the distribution of DM in the target systems.
-Furthermore, they can probe processes which have no detectable signals in terrestrial-scale experiments and in the local Universe--for example, the decay of metastable species with lifetimes comparable to the age of the Universe, and decay of DM particles into invisible channels, such as neutrinos or new dark particles \cite{Poulin:2016nat,Poulin:2016anj}. 
+Furthermore, they can probe processes with no detectable signals in terrestrial-scale experiments and in the local Universe; for example, the decays with lifetimes comparable to the age of the Universe, and decays into invisible channels, such as neutrinos or new dark particles \cite{Poulin:2016nat,Poulin:2016anj}. 
 
 Increasing the ionization fraction near the time of recombination can affect the CMB anisotropy \cite{Adams:1998nr,Chen:2003gz, Padmanabhan:2005es}. 
 \textit{Planck} measurements of CMB temperature and polarization anisotropy on degree angular scales provide some of the strongest and most robust bounds on annihilations and decays of sub-GeV DM, complementing indirect searches that probe heavier DM candidates \cite{Aghanim:2018eyx,Slatyer:2016qyl}. 
@@ -225,26 +230,31 @@ As in the previously discussed theoretical scenarios, galaxies, the Lyman-$\alph
 \section{Recommendations}
 \label{sec:recommendations}
 \vspace{-0.2cm}
-The next decade of cosmological observations will open unique and robust avenues to broadly probe the fundamental nature of dark matter particles in context of many compelling theoretical scenarios, complementing the reach of terrestrial experiments.
-The following advancements will play a pivotal role in realizing a strong program of cosmological searches for the identity of dark matter in the coming decade:
+%The next decade of cosmological observations will open unique and robust avenues to broadly probe the fundamental nature of dark matter particles in context of many compelling theoretical scenarios, complementing the reach of terrestrial experiments.
+The next decade of cosmological observations will open avenues to broadly probe the fundamental nature of DM particles in context of compelling theoretical scenarios, complementing the reach of terrestrial experiments.
+Many individual observations (e.~g.~the next-generation CMB measurements, galaxy surveys, 21-cm line intensity mapping) should reach sufficient raw sensitivity to potentially uncover evidence of DM interactions that are hidden from the present-day observations.
+However, a linchpin to their robustness as probes of fundamental physics will be in their synergies; cross-validation and consistency across the observables is necessary to establish a discovery of new DM physics in cosmological data.
+
+The following advancements will all play central roles in cosmological searches for the identity of DM in the coming decade:
 \vspace{-0.cm}
 \begin{itemize}
     \item \textbf{Observations:}
     \begin{itemize}
-        \item Next-generation measurements of small-angular-scale CMB anisotropy.
+        \item Next-generation measurements of high-multipole CMB anisotropy.
         \item Measurements of thermal history (global 21-cm signal, CMB spectral distortions).
-        \item Surveys of matter-power-spectrum tracers (21-cm tomography, Lyman-$\alpha$ forest, galaxy clustering and weak lensing).
+        \item Surveys of large-scale structure (21-cm tomography, Lyman-$\alpha$ forest, galaxy clustering and weak lensing).
         \item Near-field cosmology (local probes of small-scale structure).
     \end{itemize}
     \vspace{-0.2cm}
     \item \textbf{Theory and analysis:}
     \begin{itemize}
-        \item High-accuracy theoretical treatment of cosmological DM signals on small scales.
-        \item Simulation and modeling of non-linear growth in novel DM cosmologies.
-        \item Understanding of baryonic systematic effects in DM-related inference.
+        \item High-accuracy theoretical prediction of cosmological DM signals.
+        \item Simulation and modeling of non-linearities in novel DM cosmologies.
+        \item Understanding of baryonic systematic uncertainties in DM-related inference.
         \item Frameworks for joint analyses of cosmological probes.
         \end{itemize}
 \end{itemize}
+\pagebreak
 \bibliographystyle{ieeetr}
 \bibliography{DMCosmology}
 
